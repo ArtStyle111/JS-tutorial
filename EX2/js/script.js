@@ -47,8 +47,21 @@ if (personalMovieDB.count < 10) {
 //         i--;
 //     }
 // }
+// let i = 0;
+// while (i < 2) {
+//     const a = prompt('1?',''),
+//           b = prompt('2?','');
+//     if (a != null && b != null && a !='' && b !='' && a.length < 50) {
+//         personalMovieDB.movies[a] = b;
+//         console.log('Done');
+//     } else {
+//         console.log('Error');
+//         i--;
+//     }
+//     i++;
+// }
 let i = 0;
-while (i < 2) {
+do {
     const a = prompt('1?',''),
           b = prompt('2?','');
     if (a != null && b != null && a !='' && b !='' && a.length < 50) {
@@ -59,6 +72,7 @@ while (i < 2) {
         i--;
     }
     i++;
-}
+
+} while (i < 2);
 
 console.log(personalMovieDB);
